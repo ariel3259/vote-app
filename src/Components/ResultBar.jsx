@@ -12,7 +12,7 @@ const ResultBar = props => {
 
     const stylePointBar = {
         height:"1.5em",
-        width:props.porcent || "0%",
+        width:`${Math.round(props.porcent)}%` || "0%",
         background:"#000",
         borderRadius:"8px",
         transition:"all 0.2s",
@@ -21,7 +21,7 @@ const ResultBar = props => {
     return(
         <div style = {styleBar}>
             <div style = {stylePointBar}>
-                {props.porcent || "0%"}
+                {`${Math.round(props.porcent)}%` || "0%"}
             </div>
         </div>
     );

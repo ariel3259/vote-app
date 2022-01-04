@@ -46,28 +46,28 @@ const VotePage = () => {
             click = {onClickCandidateOne} 
             vote = {voteCandidateOne}/>
           <ResultBar 
-            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateOne} />
+            porcent = {(voteCandidateOne * 100) / (voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour)} />
 
           <CandidateButton 
             candidateName = "Fulano" 
             click = {onClickCandidateTwo} 
             vote = {voteCandidateTwo}/>
           <ResultBar 
-            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateTwo} />
+            porcent = {(voteCandidateTwo * 100) / (voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour)} />
 
           <CandidateButton 
             candidateName = "Mengano" 
             click = {onClickCandidateThree} 
             vote = {voteCandidateThree}/>
           <ResultBar 
-            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateThree} />
+            porcent = {(voteCandidateThree * 100) / (voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour)} />
 
           <CandidateButton 
             candidateName = "Zutano" 
             click = {onClickCandidateFour} 
             vote = {voteCandidateFour}/>
           <ResultBar 
-            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateFour} />
+            porcent = {(voteCandidateFour* 100) /  (voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) } />
         </Container>
           
    </>
