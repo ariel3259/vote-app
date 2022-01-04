@@ -1,0 +1,12 @@
+.container{
+    grid-column: 1/11;
+    grid-row: 2/11;
+    border:2.5px solid #000;
+    border-radius:2.5px;
+    margin:25px 25px;
+    display:flex;
+    background:lightskyblue;
+    flex-direction: column;
+    padding:20px 20px;
+    align-content: center;
+}

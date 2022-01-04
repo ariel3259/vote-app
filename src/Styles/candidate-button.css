@@ -1,0 +1,24 @@
+.candidate-button{
+    height:2em;
+    background:#000;
+    color:#fff;
+    font-size:2em;
+    margin:50px 25px;
+    border:none;
+    border:3px solid #fff;
+    border-radius:8px;
+    text-align:start;
+    padding-left:25px;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+.candidate-button:hover{
+    background:lightskyblue;
+}
+
+.candidate-button:active{
+    background:#fff;
+    color:#000;
+    border:3px solid #000;
+}

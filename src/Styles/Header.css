@@ -1,0 +1,8 @@
+header{
+    color:#fff;
+    grid-column:1/11;
+    grid-row:1/2;
+    background:lightskyblue;
+    border-bottom: 5px solid #000;
+    padding:10px;
+}
