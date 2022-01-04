@@ -5,10 +5,10 @@ import CandidateButton from "../Components/CandidateButton";
 import ResultBar from "../Components/ResultBar";
 
 const VotePage = () => {
-  const [voteCandidateOne, setVoteCandidateOne] = useState(0);
-  const [voteCandidateTwo, setVoteCandidateTwo] = useState(0);
-  const [voteCandidateThree, setVoteCandidateThree] = useState(0);
-  const [voteCandidateFour, setVoteCandidateFour] = useState(0); 
+  const [voteCandidateOne, setVoteCandidateOne] = useState(localStorage.getItem("voteCandidateOne") | 0);
+  const [voteCandidateTwo, setVoteCandidateTwo] = useState(localStorage.getItem("voteCandidateTwo") | 0 );
+  const [voteCandidateThree, setVoteCandidateThree] = useState(localStorage.getItem("voteCandidateThree") | 0);
+  const [voteCandidateFour, setVoteCandidateFour] = useState(localStorage.getItem("voteCandidateFour") | 0); 
 
 
   const onClickCandidateOne = () => {

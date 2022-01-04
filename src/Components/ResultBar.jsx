@@ -1,25 +1,18 @@
 import React from "react";
+import "../Styles/style-bar.css";
 
 const ResultBar = props => {
-    const styleBar = {
-        height:"25px",
-        width:"90%",
-        background:"white",
-        marginLeft:"50px",
-        borderRadius:"8px",
-        padding:"10px"
-    }
 
     const stylePointBar = {
-        height:"1.5em",
-        width:`${Math.round(props.porcent)}%` || "0%",
+        height:"1em",
+        width:`width: ${Math.round(props.porcent)}%` || "0%",
         background:"#000",
-        borderRadius:"8px",
+        borderRadius:"4px",
         transition:"all 0.2s",
         color: "white"
     }
     return(
-        <div style = {styleBar}>
+        <div className = "style-bar">
             <div style = {stylePointBar}>
                 {`${Math.round(props.porcent)}%` || "0%"}
             </div>
