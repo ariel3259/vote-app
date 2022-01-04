@@ -16,7 +16,7 @@ const ResultBar = props => {
         background:"#000",
         borderRadius:"8px",
         transition:"all 0.2s",
-        color:"white"
+        color: "white"
     }
     return(
         <div style = {styleBar}>

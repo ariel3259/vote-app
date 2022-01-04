@@ -12,31 +12,29 @@ const VotePage = () => {
 
 
   const onClickCandidateOne = () => {
-    let newVote = voteCandidateOne || 0;
-    setVoteCandidateOne(newVote++)
-    localStorage.voteCandidateOne = voteCandidateOne;
+    let newVote =  voteCandidateOne + 1 ;
+    setVoteCandidateOne(newVote);
+    localStorage.setItem("voteCandidateOne", voteCandidateOne);
 
   }
-  
+
   const onClickCandidateTwo = () => {
-    let newVote = voteCandidateTwo || 0;
-    setVoteCandidateTwo(newVote++);
-    localStorage.voteCandidateTwo = voteCandidateTwo;
-
-
+    let newVote = voteCandidateTwo + 1;
+    setVoteCandidateTwo(newVote);
+    localStorage.setItem("voteCandidateTwo", voteCandidateTwo);
   }
   
   const onClickCandidateThree = () => {
-    let newVote = voteCandidateThree || 0;
-    setVoteCandidateThree(newVote++);
-    localStorage.voteCandidateThree = voteCandidateThree;
+    let newVote = voteCandidateThree + 1;
+    setVoteCandidateThree(newVote);
+    localStorage.setItem("voteCandidateThree", voteCandidateThree);
 
   }
 
   const onClickCandidateFour = () => {
-    let newVote = voteCandidateFour || 0;
-    setVoteCandidateFour(newVote++);
-    localStorage.voteCandidateFour = voteCandidateFour;
+    let newVote = voteCandidateFour + 1 ;
+    setVoteCandidateFour(newVote);
+    localStorage.setItem("voteCandidateFour", voteCandidateFour);
   }
 
   return (   
@@ -47,18 +45,29 @@ const VotePage = () => {
             candidateName = "Jon Doe" 
             click = {onClickCandidateOne} 
             vote = {voteCandidateOne}/>
+          <ResultBar 
+            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateOne} />
+
           <CandidateButton 
             candidateName = "Fulano" 
             click = {onClickCandidateTwo} 
             vote = {voteCandidateTwo}/>
+          <ResultBar 
+            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateTwo} />
+
           <CandidateButton 
             candidateName = "Mengano" 
             click = {onClickCandidateThree} 
             vote = {voteCandidateThree}/>
+          <ResultBar 
+            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateThree} />
+
           <CandidateButton 
             candidateName = "Zutano" 
             click = {onClickCandidateFour} 
             vote = {voteCandidateFour}/>
+          <ResultBar 
+            porcent = {((voteCandidateOne + voteCandidateTwo + voteCandidateThree + voteCandidateFour) * 100) / voteCandidateFour} />
         </Container>
           
    </>
